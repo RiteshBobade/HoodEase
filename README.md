@@ -1,3 +1,5 @@
+#Hoodease
+
 Hoodease is a modern, responsive e-commerce front page for a hoodie store. It showcases stylish product listings, customer testimonials, and promotional offers — all built with clean HTML, CSS, and JavaScript.
 
 🔧 Features
