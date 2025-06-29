@@ -1,0 +1,49 @@
+<!-- login.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - HoodEase</title>
+  <link rel="stylesheet" href="login.css">
+  
+</head>
+<body>
+  <div class="auth-box">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <input type="email" id="loginEmail" placeholder="Email" required>
+      <div style="position: relative;">
+        <input type="password" id="loginPassword" placeholder="Password" required>
+        <span class="toggle-password" onclick="togglePassword('loginPassword')">👁️</span>
+      </div>
+      <button type="submit">Login</button>
+    </form>
+    <div class="small-link">
+      New here? <a href="signup.html">Sign up</a>
+    </div>
+  </div>
+
+  <script>
+    function togglePassword(id) {
+      const field = document.getElementById(id);
+      field.type = field.type === 'password' ? 'text' : 'password';
+    }
+
+    document.getElementById('loginForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const email = document.getElementById('loginEmail').value;
+      const password = document.getElementById('loginPassword').value;
+      const stored = JSON.parse(localStorage.getItem('user'));
+
+      if (stored && stored.email === email && stored.password === password) {
+        alert('Login successful! Redirecting to home...');
+        window.location.href = 'index.html';
+      } else {
+        alert('Invalid credentials');
+      }
+    });
+  </script>
+</body>
+</html>
+

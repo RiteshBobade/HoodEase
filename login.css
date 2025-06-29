@@ -1,0 +1,88 @@
+/* login.css */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: url("images/Background.jpg") no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+
+.auth-box {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  width: 320px;
+}
+
+.auth-box h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #239b7e;
+}
+
+input {
+  width: 92%;
+  padding: 10px 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+input:focus {
+  border-color: #239b7e;
+  outline: none;
+}
+
+button {
+  width: 100%;
+  background: #239b7e;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+button:hover {
+  background-color: #1f8068;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #888;
+  font-size: 16px;
+}
+
+.input-group {
+  position: relative;
+}
+
+.small-link {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+.small-link a {
+  color: #239b7e;
+  text-decoration: none;
+}
+
+.small-link a:hover {
+  text-decoration: underline;
+}
