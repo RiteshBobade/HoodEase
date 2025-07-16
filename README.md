@@ -9,7 +9,7 @@ Hoodease is a modern, responsive e-commerce front page for a hoodie store. It sh
 
 💬 Customer reviews section
 
-🎯 Promotional banners with CTAs
+🎯 Client review's Section
 
 📩 Contact form for user feedback
 
